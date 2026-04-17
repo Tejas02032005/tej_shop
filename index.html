@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Store with Cart & Dummy Payment - Google Analytics</title>
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YOUR_MEASUREMENT_ID"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-YOUR_MEASUREMENT_ID');
+    </script>
+    
+    <style>
+        body { 
+            font-family: Arial; 
+            text-align: center; 
+        }
+        .product, #cart {
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin: 15px;
+            width: 250px;
+            display: inline-block;
+            vertical-align: top;
+        }
+        button {
+            padding: 5px 10px;
+            background: green;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 3px;
+        }
+        button:hover {
+            background: darkgreen;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Simple E-Commerce Store</h1>
+
+    <div class="product">
+        <h2>Sample Item</h2>
+        <p>Price: $25.00</p>
+        <button>Add to Cart</button>
+    </div>
+
+    <div id="cart">
+        <h2>Your Cart</h2>
+        <p>Items: 0</p>
+        <p>Total: $0.00</p>
+        <button>Proceed to Payment</button>
+    </div>
+
+</body>
+</html>
